@@ -1,0 +1,22 @@
+{
+  "name": "Jump_specific_position",
+  "version": "0.1",
+  "description": "特定の位置に戻る機能です。  [control+(数字)]:位置の保存, [shift+(数字)]:保存した位置に移動  一つのページに十箇所保存できます。 ",
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "js/jquery.min.js",
+        "background.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2
+}
